@@ -41,6 +41,7 @@ class StatServiceTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void TestMonthMinSales() {
         ru.netology.stats.StatsService service = new ru.netology.stats.StatsService();
@@ -51,6 +52,7 @@ class StatServiceTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void TestMonthHighSales() {
         ru.netology.stats.StatsService service = new ru.netology.stats.StatsService();
@@ -61,6 +63,7 @@ class StatServiceTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void TestMonthLowSales() {
         ru.netology.stats.StatsService service = new ru.netology.stats.StatsService();
