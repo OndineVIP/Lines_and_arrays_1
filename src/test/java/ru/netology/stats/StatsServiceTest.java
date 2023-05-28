@@ -4,11 +4,11 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 
-class StatServiceTest {
+class statsServiceTest {
 
     @Test
     public void testSum() {
-        ru.netology.stats.StatsService service = new ru.netology.stats.StatsService();
+        ru.netology.stats.statsService service = new ru.netology.stats.statsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long actual = service.sum(sales);
@@ -21,7 +21,7 @@ class StatServiceTest {
 
     @Test
     public void testAverage() {
-        ru.netology.stats.StatsService service = new ru.netology.stats.StatsService();
+        ru.netology.stats.statsService service = new ru.netology.stats.statsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long actual = service.average(sales);
@@ -32,44 +32,44 @@ class StatServiceTest {
 
     @Test
 
-    public void TestMonthMaxSales() {
-        ru.netology.stats.StatsService service = new ru.netology.stats.StatsService();
+    public void testMonthMaxSales() {
+        ru.netology.stats.statsService service = new ru.netology.stats.statsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        long actual = service.MaxSales(sales);
+        long actual = service.maxSales(sales);
         long expected = 8;
 
         Assertions.assertEquals(expected, actual);
     }
 
     @Test
-    public void TestMonthMinSales() {
-        ru.netology.stats.StatsService service = new ru.netology.stats.StatsService();
+    public void testMonthMinSales() {
+        ru.netology.stats.statsService service = new ru.netology.stats.statsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        long actual = service.MinSales(sales);
+        long actual = service.minSales(sales);
         long expected = 9;
 
         Assertions.assertEquals(expected, actual);
     }
 
     @Test
-    public void TestMonthHighSales() {
-        ru.netology.stats.StatsService service = new ru.netology.stats.StatsService();
+    public void testMonthHighSales() {
+        ru.netology.stats.statsService service = new ru.netology.stats.statsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        long actual = service.MonthHighSales(sales);
+        long actual = service.monthHighSales(sales);
         long expected = 5;
 
         Assertions.assertEquals(expected, actual);
     }
 
     @Test
-    public void TestMonthLowSales() {
-        ru.netology.stats.StatsService service = new ru.netology.stats.StatsService();
+    public void testMonthLowSales() {
+        ru.netology.stats.statsService service = new ru.netology.stats.statsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        long actual = service.MonthLowSales(sales);
+        long actual = service.monthLowSales(sales);
         long expected = 5;
 
         Assertions.assertEquals(expected, actual);
