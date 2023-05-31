@@ -4,11 +4,11 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 
-class statsServiceTest {
+class StatsServiceTest {
 
     @Test
     public void testSum() {
-        ru.netology.stats.statsService service = new ru.netology.stats.statsService();
+        ru.netology.stats.StatsService service = new ru.netology.stats.StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long actual = service.sum(sales);
@@ -21,7 +21,7 @@ class statsServiceTest {
 
     @Test
     public void testAverage() {
-        ru.netology.stats.statsService service = new ru.netology.stats.statsService();
+        ru.netology.stats.StatsService service = new ru.netology.stats.StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long actual = service.average(sales);
@@ -33,7 +33,7 @@ class statsServiceTest {
     @Test
 
     public void testMonthMaxSales() {
-        ru.netology.stats.statsService service = new ru.netology.stats.statsService();
+        ru.netology.stats.StatsService service = new ru.netology.stats.StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long actual = service.maxSales(sales);
@@ -44,7 +44,7 @@ class statsServiceTest {
 
     @Test
     public void testMonthMinSales() {
-        ru.netology.stats.statsService service = new ru.netology.stats.statsService();
+        ru.netology.stats.StatsService service = new ru.netology.stats.StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long actual = service.minSales(sales);
@@ -55,7 +55,7 @@ class statsServiceTest {
 
     @Test
     public void testMonthHighSales() {
-        ru.netology.stats.statsService service = new ru.netology.stats.statsService();
+        ru.netology.stats.StatsService service = new ru.netology.stats.StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long actual = service.monthHighSales(sales);
@@ -66,7 +66,7 @@ class statsServiceTest {
 
     @Test
     public void testMonthLowSales() {
-        ru.netology.stats.statsService service = new ru.netology.stats.statsService();
+        ru.netology.stats.StatsService service = new ru.netology.stats.StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long actual = service.monthLowSales(sales);
